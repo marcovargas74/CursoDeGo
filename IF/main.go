@@ -28,7 +28,10 @@ func main() {
 
 	if descricao, status := haQuantoTempoEstaDevendo(meses); status {
 		fmt.Println("Qual a situacao do cliente", descricao)
+		return
 	}
+
+	
 }
 
 func haQuantoTempoEstaDevendo(meses int) (descricao string, status bool) {
